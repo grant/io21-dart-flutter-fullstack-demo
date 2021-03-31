@@ -51,6 +51,7 @@ class GreetingState extends State<Greeting> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TextFormField(
+              style: TextStyle(fontSize: 30),
               autofocus: true,
               focusNode: _focusNameNode,
               decoration: InputDecoration(
@@ -70,7 +71,7 @@ class GreetingState extends State<Greeting> {
               padding: EdgeInsets.symmetric(vertical: 16),
               child: ElevatedButton(
                 onPressed: () => _submit(context),
-                child: Text('Submit'),
+                child: Text('Submit', style: TextStyle(fontSize: 30)),
               ),
             ),
           ],
@@ -90,7 +91,8 @@ class GreetingState extends State<Greeting> {
       // clear queued snackbars from clicking too fast
       sm.clearSnackBars();
       sm.showSnackBar(SnackBar(
-        content: Text('${model.salutation}, ${model.name}'),
+        content: Text('${model.salutation}, ${model.name}',
+            style: TextStyle(fontSize: 50)),
       ));
 
       _focusNameNode?.requestFocus();

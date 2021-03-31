@@ -8,6 +8,8 @@ demo.
 
 ## Environment
 
+Install flutter...
+
 Configuration for `dev` and `prod` environments is stored under `assets/config`.
 
 The configuration is set by launching either `lib/main_dev.dart` or
@@ -17,6 +19,12 @@ For example:
 
 ```shell
 flutter run -d macos -t lib/main_prod.dart
+```
+
+Enable macos dev:
+
+```
+flutter config --enable-macos-desktop
 ```
 
 > NOTE:

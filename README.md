@@ -7,13 +7,15 @@ the backend and then displays the response (a greeting in various languages) in
 a snackbar (an ephemeral popup widget for displaying messages at the bottom of
 the page).
 
-
 The **backend** is a Dart function app that was generated using the
 [Functions Framework for Dart]. It serves an HTTP endpoint that accepts a
 JSON-encoded request body and returns a JSON-encoded response body. For the
 demo, the function is hosted on `localhost` and on [Cloud Run], a fully
 managed serverless platform on [Google Cloud].
 
+## Requirements
+
+- Dart: >=2.12.0 <3.0.0
 
 ## Build and deploy the backend
 
@@ -22,7 +24,6 @@ Change directory to `backend`.
 ```shell
 cd backend
 ```
-
 
 ### Local machine
 
@@ -45,7 +46,6 @@ Listening on :8080
 ```
 
 For more details see [backend/README].
-
 
 ### Cloud Run
 
@@ -77,15 +77,12 @@ Service URL: https://greeting-gpua4upw6q-uc.a.run.app
 
 The function app endpoint is the Service URL printed on the last line.
 
-
 See [Quickstart: Cloud Run] for details on setting up and using a Google 
 Cloud project.
-
 
 ### Verify the backend works
 
 If you have `curl` installed on your system, you can enter the following:
-
 
 ```shell
 URL=http://localhost:8080  # or your Cloud Run service URL
@@ -96,7 +93,6 @@ Output (example):
 ```shell
 {"salutation":"Hello","name":"World"}
 ```
-
 
 ## Build and run the frontend
 
@@ -122,7 +118,6 @@ flutter run -d macos -t lib/main_dev.dart
 
 ### Backend running on Cloud Run
 
-
 ```shell
 export GREETING_URL={Cloud Run service URL}
 flutter run -d macos -t lib/main_prod.dart
@@ -131,11 +126,6 @@ flutter run -d macos -t lib/main_prod.dart
 ### Trying it out
 
 ![flutter_demo.png]
-
-
-
-
-
 
 [backend/README]:
 ./backend/README.md
