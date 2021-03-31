@@ -6,9 +6,11 @@ demo.
 > NOTE: The desktop app currently has only been tested on macOS. Testing on
 > Linux or Windows and help with updating docs is appreciated!
 
-## Environment
+## Requirements
 
-Install flutter...
+- [Flutter](https://flutter.dev/docs/get-started/install)
+
+## Environment
 
 Configuration for `dev` and `prod` environments is stored under `assets/config`.
 
