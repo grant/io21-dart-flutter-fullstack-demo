@@ -26,7 +26,9 @@ flutter run -d macos -t lib/main_prod.dart
 Enable macos dev:
 
 ```
+flutter config --enable-windows-desktop
 flutter config --enable-macos-desktop
+flutter config --enable-linux-desktop
 ```
 
 > NOTE:
